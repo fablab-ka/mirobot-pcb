@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -9643,6 +9643,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <part name="VSS8" library="supply1" deviceset="VSS" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="VSS9" library="supply1" deviceset="VSS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9684,6 +9685,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="VSS8" gate="G$1" x="66.04" y="134.62" rot="R180"/>
 <instance part="GND11" gate="1" x="83.82" y="121.92"/>
 <instance part="GND12" gate="1" x="66.04" y="121.92"/>
+<instance part="VSS9" gate="G$1" x="-10.16" y="2.54" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9993,6 +9995,16 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <segment>
 <pinref part="C2(ESP)" gate="G$1" pin="+"/>
 <pinref part="VSS7" gate="G$1" pin="VSS"/>
+</segment>
+<segment>
+<pinref part="RIGHT_STEPPER" gate="G$1" pin="5"/>
+<pinref part="VSS9" gate="G$1" pin="VSS"/>
+<wire x1="-7.62" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LEFT_STEPPER" gate="G$1" pin="5"/>
+<pinref part="VSS5" gate="G$1" pin="VSS"/>
+<wire x1="30.48" y1="2.54" x2="33.02" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
