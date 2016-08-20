@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9653,28 +9653,28 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <instance part="ARDUINO_NANO" gate="G$1" x="25.4" y="124.46" rot="R270"/>
 <instance part="WITTY(ESP8266-12E)" gate="G$1" x="73.66" y="73.66" rot="R180"/>
 <instance part="ULN2803" gate="G$1" x="20.32" y="27.94" rot="R270"/>
-<instance part="RIGHT_STEPPER" gate="G$1" x="7.62" y="-7.62" rot="R270"/>
+<instance part="RIGHT_STEPPER" gate="G$1" x="2.54" y="-7.62" rot="R270"/>
 <instance part="LEFT_STEPPER" gate="G$1" x="43.18" y="-7.62" rot="R270"/>
-<instance part="LINE_FOLLOW" gate="G$1" x="-22.86" y="60.96" rot="R180"/>
+<instance part="LINE_FOLLOW" gate="G$1" x="-27.94" y="60.96" rot="R180"/>
 <instance part="PEN_SERVO" gate="G$1" x="-30.48" y="83.82" rot="R180"/>
 <instance part="LEFT_BUMP" gate="G$1" x="-22.86" y="-7.62" rot="R270"/>
 <instance part="RIGHT_BUMP" gate="G$1" x="73.66" y="-7.62" rot="R270"/>
 <instance part="BATTERY" gate="G$1" x="121.92" y="-5.08"/>
-<instance part="BUZZER" gate="G$1" x="-25.4" y="106.68" rot="R180"/>
+<instance part="BUZZER" gate="G$1" x="-30.48" y="106.68" rot="R180"/>
 <instance part="R1" gate="G$1" x="53.34" y="101.6" rot="R90"/>
 <instance part="R2" gate="G$1" x="63.5" y="96.52"/>
 <instance part="GND1" gate="1" x="71.12" y="96.52" rot="R90"/>
-<instance part="GND2" gate="1" x="91.44" y="60.96" rot="R90"/>
+<instance part="GND2" gate="1" x="93.98" y="60.96" rot="R90"/>
 <instance part="GND3" gate="1" x="76.2" y="5.08" rot="R180"/>
 <instance part="GND4" gate="1" x="109.22" y="-7.62" rot="R270"/>
 <instance part="GND5" gate="1" x="-20.32" y="5.08" rot="R180"/>
 <instance part="GND6" gate="1" x="-15.24" y="116.84" rot="R180"/>
-<instance part="GND7" gate="1" x="-7.62" y="53.34" rot="R90"/>
+<instance part="GND7" gate="1" x="-10.16" y="53.34" rot="R90"/>
 <instance part="GND8" gate="1" x="-17.78" y="88.9" rot="R90"/>
-<instance part="GND9" gate="1" x="45.72" y="139.7" rot="R180"/>
+<instance part="GND9" gate="1" x="45.72" y="144.78" rot="R180"/>
 <instance part="GND10" gate="1" x="7.62" y="43.18" rot="R180"/>
 <instance part="VSS1" gate="G$1" x="104.14" y="-2.54" rot="R270"/>
-<instance part="VSS2" gate="G$1" x="99.06" y="58.42" rot="R90"/>
+<instance part="VSS2" gate="G$1" x="96.52" y="58.42" rot="R90"/>
 <instance part="VSS3" gate="G$1" x="50.8" y="144.78" rot="R180"/>
 <instance part="VSS4" gate="G$1" x="0" y="15.24" rot="R270"/>
 <instance part="VSS5" gate="G$1" x="27.94" y="2.54" rot="R270"/>
@@ -9752,11 +9752,12 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <segment>
 <pinref part="WITTY(ESP8266-12E)" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="91.44" y1="60.96" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ARDUINO_NANO" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="45.72" y1="139.7" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="139.7" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ULN2803" gate="G$1" pin="GND"/>
@@ -9781,12 +9782,13 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <segment>
 <pinref part="BUZZER" gate="G$1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="-20.32" y1="109.22" x2="-15.24" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="109.22" x2="-15.24" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LINE_FOLLOW" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="-12.7" y1="53.34" x2="-10.16" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="53.34" x2="-12.7" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1(NANO)" gate="G$1" pin="-"/>
@@ -9800,7 +9802,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <net name="N$23" class="0">
 <segment>
 <pinref part="BUZZER" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO" gate="G$1" pin="D9"/>
 <wire x1="30.48" y1="104.14" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
 </segment>
@@ -9818,13 +9820,13 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pinref part="ARDUINO_NANO" gate="G$1" pin="A1"/>
 <wire x1="12.7" y1="109.22" x2="12.7" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="LINE_FOLLOW" gate="G$1" pin="4"/>
-<wire x1="12.7" y1="68.58" x2="-12.7" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="68.58" x2="-17.78" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="LINE_FOLLOW" gate="G$1" pin="3"/>
-<wire x1="-12.7" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO" gate="G$1" pin="A0"/>
 <wire x1="15.24" y1="63.5" x2="15.24" y2="109.22" width="0.1524" layer="91"/>
 </segment>
@@ -9832,6 +9834,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <net name="N$27" class="0">
 <segment>
 <pinref part="LINE_FOLLOW" gate="G$1" pin="2"/>
+<wire x1="-17.78" y1="58.42" x2="-12.7" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="58.42" x2="-12.7" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="144.78" x2="22.86" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO" gate="G$1" pin="5V"/>
@@ -9847,7 +9850,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <segment>
 <pinref part="WITTY(ESP8266-12E)" gate="G$1" pin="VCC"/>
 <pinref part="VSS2" gate="G$1" pin="VSS"/>
-<wire x1="88.9" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BATTERY" gate="G$1" pin="1"/>
@@ -9875,7 +9878,6 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <segment>
 <pinref part="RIGHT_STEPPER" gate="G$1" pin="5"/>
 <pinref part="VSS9" gate="G$1" pin="VSS"/>
-<wire x1="-7.62" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LEFT_STEPPER" gate="G$1" pin="5"/>
@@ -9922,10 +9924,10 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <net name="N$9" class="0">
 <segment>
 <pinref part="ARDUINO_NANO" gate="G$1" pin="D8"/>
-<wire x1="33.02" y1="109.22" x2="33.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="109.22" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="ULN2803" gate="G$1" pin="4B"/>
-<wire x1="33.02" y1="99.06" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="99.06" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="91.44" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="91.44" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -9967,9 +9969,9 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <segment>
 <pinref part="ULN2803" gate="G$1" pin="5C"/>
 <wire x1="20.32" y1="15.24" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="12.7" x2="2.54" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="12.7" x2="-2.54" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="RIGHT_STEPPER" gate="G$1" pin="4"/>
-<wire x1="2.54" y1="12.7" x2="2.54" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="12.7" x2="-2.54" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -9977,48 +9979,51 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pinref part="ULN2803" gate="G$1" pin="6C"/>
 <wire x1="17.78" y1="15.24" x2="17.78" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="RIGHT_STEPPER" gate="G$1" pin="3"/>
-<wire x1="17.78" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="10.16" x2="2.54" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="ULN2803" gate="G$1" pin="7C"/>
-<wire x1="15.24" y1="15.24" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="RIGHT_STEPPER" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="7.62" x2="12.7" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="ULN2803" gate="G$1" pin="8C"/>
 <pinref part="RIGHT_STEPPER" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="15.24" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="ULN2803" gate="G$1" pin="3B"/>
-<wire x1="25.4" y1="40.64" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="40.64" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO" gate="G$1" pin="D10"/>
-<wire x1="25.4" y1="88.9" x2="27.94" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="96.52" x2="27.94" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="106.68" x2="27.94" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="ULN2803" gate="G$1" pin="2B"/>
-<wire x1="27.94" y1="40.64" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="40.64" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO" gate="G$1" pin="D11"/>
-<wire x1="27.94" y1="96.52" x2="25.4" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="99.06" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="99.06" x2="25.4" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="ULN2803" gate="G$1" pin="1B"/>
-<wire x1="30.48" y1="40.64" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="40.64" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO" gate="G$1" pin="D12"/>
-<wire x1="30.48" y1="88.9" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="101.6" x2="22.86" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="101.6" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
